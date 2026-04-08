@@ -1,1 +1,2 @@
-
+[agentnode]
+localhost ansible_connection=local
