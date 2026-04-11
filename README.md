@@ -70,7 +70,8 @@ Developer pushes code to GitHub → Jenkins pulls code → Builds Docker images 
 
 - Jenkins Pipeline
 - ![Jenkins pipeline](screenshots/jenkinspipeline_20260408-232141_Chrome.jpg)
-- Kubernetes Pods and Services  
+- Kubernetes Pods and Services
+- ![kubernetes Pods & SVC](screenshots/pods_svc_20260408-233015_Termius.jpg)
 - AWS EKS Cluster  
 - Website Output  
 - DockerHub Images  
