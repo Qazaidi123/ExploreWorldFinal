@@ -82,7 +82,7 @@ Developer pushes code to GitHub → Jenkins pulls code → Builds Docker images 
 
 ---
 
-### 7. Challenges and Solutions
+### 7.Challenges and Solutions
 
 # 1. SonarQube Analysis Issue
 **Error:** Failed to query server version: HTTP connect timed out  
