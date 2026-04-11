@@ -77,7 +77,8 @@ Developer pushes code to GitHub → Jenkins pulls code → Builds Docker images 
 - Website Output
 - ![Website Page](screenshots/websitepage1_20260408-231544_Chrome.jpg)
 - ![Website Page 2](screenshots/websitepage2_20260408-231606_Chrome.jpg)
-- DockerHub Images  
+- DockerHub Images
+- ![DockerHub](screenshots/dockerhub_20260408-233236_Chrome.jpg)
 
 ---
 
