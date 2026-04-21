@@ -1,18 +1,14 @@
-FROM php:8.2-apache
+# Use lightweight nginx image
+FROM nginx:alpine
 
-RUN docker-php-ext-install mysqli
+# Remove default nginx static files
+RUN rm -rf /usr/share/nginx/html/*
 
-# Enable rewrite
-RUN a2enmod rewrite
+# Copy frontend code
+COPY . /usr/share/nginx/html/
 
-# Copy only frontend code
-COPY . /var/www/html/
-
-# Permissions
-RUN chmod -R 755 /var/www/html
-RUN chown -R www-data:www-data /var/www/html
-
-# Enable .htaccess
-RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
-
+# Expose port
 EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
